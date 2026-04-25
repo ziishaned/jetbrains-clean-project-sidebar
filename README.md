@@ -1,7 +1,7 @@
 # Clean Project Sidebar
 
 <!-- Plugin description -->
-Clean Project Sidebar hides noisy Project tool window labels in JetBrains IDEs. It can hide the `External Libraries` node and gray library-root text such as `library root` next to folders like `node_modules`.
+Cleans up the JetBrains Project sidebar by hiding External Libraries and gray library root labels (e.g. next to node_modules).
 <!-- Plugin description end -->
 
 ![Before and after Project sidebar cleanup](assets/before-after.png)
@@ -29,7 +29,7 @@ Build the plugin zip:
 ./gradlew buildPlugin
 ```
 
-Then install `build/distributions/jetbrains-sidebar-0.1.0.zip` from `Settings > Plugins > Install Plugin from Disk...`.
+Then install `build/distributions/jetbrains-clean-project-sidebar-*.zip` from `Settings > Plugins > Install Plugin from Disk...`.
 
 ## Publish To JetBrains Marketplace
 

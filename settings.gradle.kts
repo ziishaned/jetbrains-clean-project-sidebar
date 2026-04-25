@@ -21,4 +21,4 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "jetbrains-sidebar"
+rootProject.name = "jetbrains-clean-project-sidebar"
