@@ -1,0 +1,18 @@
+<idea-plugin>
+    <id>dev.zeeshan.jetbrains.clean-project-sidebar</id>
+    <name>Clean Project Sidebar</name>
+    <vendor email="support@example.com">Zeeshan</vendor>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <applicationService serviceImplementation="dev.zeeshan.jetbrains.sidebar.CleanProjectSidebarSettings"/>
+        <applicationConfigurable
+                parentId="appearance"
+                instance="dev.zeeshan.jetbrains.sidebar.CleanProjectSidebarConfigurable"
+                id="dev.zeeshan.jetbrains.sidebar.CleanProjectSidebarConfigurable"
+                displayName="Clean Project Sidebar"/>
+        <treeStructureProvider implementation="dev.zeeshan.jetbrains.sidebar.CleanProjectSidebarTreeStructureProvider"/>
+        <projectViewNodeDecorator implementation="dev.zeeshan.jetbrains.sidebar.CleanProjectSidebarNodeDecorator"/>
+    </extensions>
+</idea-plugin>
