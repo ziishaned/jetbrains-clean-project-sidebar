@@ -1,7 +1,7 @@
 <idea-plugin>
     <id>dev.zeeshan.jetbrains.clean-project-sidebar</id>
     <name>Clean Project Sidebar</name>
-    <vendor email="support@example.com">Zeeshan</vendor>
+    <vendor url="https://github.com/ziishaned/jetbrains-clean-project-sidebar">Zeeshan</vendor>
 
     <depends>com.intellij.modules.platform</depends>
 

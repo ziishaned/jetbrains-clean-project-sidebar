@@ -31,6 +31,27 @@ Build the plugin zip:
 
 Then install `build/distributions/jetbrains-sidebar-0.1.0.zip` from `Settings > Plugins > Install Plugin from Disk...`.
 
+## Publish To JetBrains Marketplace
+
+Create a permanent Marketplace token from your JetBrains Marketplace account, then publish with:
+
+```bash
+export JETBRAINS_MARKETPLACE_TOKEN=your-token
+./gradlew publishPlugin
+```
+
+You can also set the token in a local, uncommitted Gradle property:
+
+```properties
+intellijPlatformPublishingToken=your-token
+```
+
+Before publishing, run:
+
+```bash
+./gradlew test buildPlugin verifyPlugin
+```
+
 ## Development
 
 ```bash
