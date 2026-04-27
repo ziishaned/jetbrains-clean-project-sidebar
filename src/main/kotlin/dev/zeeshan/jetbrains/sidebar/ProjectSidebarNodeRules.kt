@@ -10,5 +10,5 @@ object ProjectSidebarNodeRules {
             presentableText == EXTERNAL_LIBRARIES_TEXT
 
     fun isLibraryRootLocation(locationText: String?): Boolean =
-        locationText?.trim()?.equals(LIBRARY_ROOT_TEXT, ignoreCase = true) == true
+        locationText?.contains(LIBRARY_ROOT_TEXT, ignoreCase = true) == true
 }

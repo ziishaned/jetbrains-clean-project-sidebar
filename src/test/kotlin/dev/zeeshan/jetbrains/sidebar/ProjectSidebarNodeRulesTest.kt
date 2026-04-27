@@ -39,11 +39,14 @@ class ProjectSidebarNodeRulesTest {
     fun detectsLibraryRootLocationText() {
         assertTrue(ProjectSidebarNodeRules.isLibraryRootLocation("library root"))
         assertTrue(ProjectSidebarNodeRules.isLibraryRootLocation(" Library Root "))
+        assertTrue(ProjectSidebarNodeRules.isLibraryRootLocation("[library root]"))
+        assertTrue(ProjectSidebarNodeRules.isLibraryRootLocation("library root - 2 classes"))
     }
 
     @Test
     fun keepsOtherLocationText() {
         assertFalse(ProjectSidebarNodeRules.isLibraryRootLocation(null))
         assertFalse(ProjectSidebarNodeRules.isLibraryRootLocation("generated sources root"))
+        assertFalse(ProjectSidebarNodeRules.isLibraryRootLocation("sources root"))
     }
 }

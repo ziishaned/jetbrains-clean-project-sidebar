@@ -60,6 +60,11 @@ intellijPlatform {
 }
 
 tasks {
+    buildPlugin {
+        archiveFileName.set("jetbrains-clean-project-sidebar-${project.version}.zip")
+        destinationDirectory.set(layout.buildDirectory.dir("distributions"))
+    }
+
     test {
         useJUnit()
     }

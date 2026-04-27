@@ -13,6 +13,6 @@
                 id="dev.zeeshan.jetbrains.sidebar.CleanProjectSidebarConfigurable"
                 displayName="Clean Project Sidebar"/>
         <treeStructureProvider implementation="dev.zeeshan.jetbrains.sidebar.CleanProjectSidebarTreeStructureProvider"/>
-        <projectViewNodeDecorator implementation="dev.zeeshan.jetbrains.sidebar.CleanProjectSidebarNodeDecorator"/>
+        <projectViewNodeDecorator implementation="dev.zeeshan.jetbrains.sidebar.CleanProjectSidebarNodeDecorator" order="last"/>
     </extensions>
 </idea-plugin>
